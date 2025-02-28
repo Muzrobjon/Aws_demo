@@ -118,12 +118,7 @@
         }
       ]
     },
-    "public_access_block": {
-      "block_public_acls": false,
-      "ignore_public_acls": false,
-      "block_public_policy": false,
-      "restrict_public_buckets": false
-    },
+    
     "tags": {},
     "website_hosting": {
       "enabled": true,
