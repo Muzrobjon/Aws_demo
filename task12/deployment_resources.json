@@ -90,7 +90,6 @@
     "autoscaling": [],
     "tags": {}
   },
-  
   "api-ui-hoster": {
     "resource_type": "s3_bucket",
     "acl": "public-read",
