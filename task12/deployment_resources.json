@@ -25,7 +25,8 @@
             "cognito-idp:ListUserPools",
             "cognito-idp:ListUserPoolClients",
             "cognito-idp:AdminRespondToAuthChallenge",
-            "cognito-idp:AdminConfirmSignUp"
+            "cognito-idp:AdminConfirmSignUp",
+            "s3:PutBucketAcl"
           ],
           "Effect": "Allow",
           "Resource": "*"
@@ -90,10 +91,8 @@
     "autoscaling": [],
     "tags": {}
   },
-  
   "api-ui-hoster": {
     "resource_type": "s3_bucket",
-    "acl": "public-read",
     "cors": [],
     "policy": {
       "Version": "2012-10-17",
@@ -111,14 +110,13 @@
           "Condition": {
             "IpAddress": {
               "aws:SourceIp": [
-                "18.197.177.98/32"
+                "92.253.197.79/32"
               ]
             }
           }
         }
       ]
     },
-    
     "tags": {},
     "website_hosting": {
       "enabled": true,
